@@ -3,6 +3,7 @@ package main;
 
 import java.sql.SQLException;
 import main.conexao.ConexaoDB;
+import main.funcionalidades.AtualizarSalario;
 import main.funcionalidades.CriarTabela;
 import main.funcionalidades.InserirFuncionarios;
 import main.funcionalidades.ListandoPorFuncao;
@@ -18,5 +19,6 @@ public class App {
 		RemovendoFuncionario.remover();
 		ListarFuncionarios.imprimir();
 		ListandoPorFuncao.listarMap();
+		AtualizarSalario.aumentoSalario();
 	}
 }
