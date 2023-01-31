@@ -8,6 +8,7 @@ import main.funcionalidades.CriarTabela;
 import main.funcionalidades.InserirFuncionarios;
 import main.funcionalidades.ListandoPorFuncao;
 import main.funcionalidades.ListarFuncionarios;
+import main.funcionalidades.ListarMaisVelho;
 import main.funcionalidades.ListarPorMesNascimento;
 import main.funcionalidades.RemovendoFuncionario;
 
@@ -18,9 +19,10 @@ public class App {
 //		CriarTabela.criar();
 //		InserirFuncionarios.inserir();
 //		RemovendoFuncionario.remover();
-		ListarFuncionarios.imprimir();
-		AtualizarSalario.aumentoSalario();
-		ListandoPorFuncao.listarMap();
-		ListarPorMesNascimento.imprimirPeloMes();
+//		ListarFuncionarios.imprimir();
+//		AtualizarSalario.aumentoSalario();
+//		ListandoPorFuncao.listarMap();
+//		ListarPorMesNascimento.imprimirPeloMes();
+		ListarMaisVelho.imprimirMaisVelho();
 	}
 }
