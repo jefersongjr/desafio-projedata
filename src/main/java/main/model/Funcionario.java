@@ -7,13 +7,13 @@ public class Funcionario extends Pessoa {
 	private double salario;
 	private String funcao;
 
-	public Funcionario(int id, String nome, LocalDate dataDeNascimento,
+	public Funcionario(String nome, LocalDate dataDeNascimento,
 			double salario, String funcao) {
 		super(nome, dataDeNascimento);
 		this.salario = salario;
 		this.funcao = funcao;
 	}
-
+ 
 	public double getSalario() {
 		return salario;
 	}

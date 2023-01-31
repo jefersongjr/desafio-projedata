@@ -32,7 +32,6 @@ public class ListarFuncionarios {
 		List<Funcionario> funcionarios = new ArrayList<>();
 
 		while (resultado.next()) {
-			int id = resultado.getInt("id");
 			String nome = resultado.getString("nome");
 			Date data = resultado.getDate("dataNascimento");
 			Calendar calendario = Calendar.getInstance();
@@ -43,7 +42,7 @@ public class ListarFuncionarios {
 			LocalDate newData = LocalDate.of(ano, mes, dia);
 			double salario = resultado.getDouble("salario");
 			String funcao = resultado.getString("funcao");
-			funcionarios.add(new Funcionario(id, nome, newData, salario, funcao));
+			funcionarios.add(new Funcionario( nome, newData, salario, funcao));
 		}
 
 		return funcionarios;
