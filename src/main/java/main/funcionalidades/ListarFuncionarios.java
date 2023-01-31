@@ -21,8 +21,8 @@ public class ListarFuncionarios {
 		Statement stmt = connection.createStatement();
 		ResultSet resultado = stmt.executeQuery(query);
 
-		listarFuncionarios(resultado);
-		
+		List<Funcionario> listFuncionario = listarFuncionarios(resultado);
+		imprimirFuncionarios(listFuncionario);
 		stmt.close();
 		connection.close();
 	}
@@ -46,10 +46,13 @@ public class ListarFuncionarios {
 			funcionarios.add(new Funcionario(id, nome, newData, salario, funcao));
 		}
 
+		return funcionarios;
+	}
+
+	public static void imprimirFuncionarios(List<Funcionario> funcionarios) throws SQLException {
 		for (Funcionario f : funcionarios) {
 			System.out.println("Nome: " + f.getNome() + " - Data de Nascimento: " + f.getDataDeNascimento()
 					+ " - Salário: " + f.getSalario() + " - Função: " + f.getFuncao());
 		}
-		return funcionarios;
 	}
 }

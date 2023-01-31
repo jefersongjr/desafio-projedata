@@ -5,6 +5,7 @@ import java.sql.SQLException;
 import main.conexao.ConexaoDB;
 import main.funcionalidades.CriarTabela;
 import main.funcionalidades.InserirFuncionarios;
+import main.funcionalidades.ListandoPorFuncao;
 import main.funcionalidades.ListarFuncionarios;
 import main.funcionalidades.RemovendoFuncionario;
 
@@ -16,5 +17,6 @@ public class App {
 		InserirFuncionarios.inserir();
 		RemovendoFuncionario.remover();
 		ListarFuncionarios.imprimir();
+		ListandoPorFuncao.listarMap();
 	}
 }
