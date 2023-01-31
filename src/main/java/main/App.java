@@ -1,6 +1,9 @@
 package main;
 
+import java.sql.SQLException;
+
 import main.conexao.ConexaoDB;
+import main.funcionalidades.CriarTabela;
 
 /**
  * Hello world!
@@ -8,8 +11,9 @@ import main.conexao.ConexaoDB;
  */
 public class App 
 {
-    public static void main( String[] args )
+    public static void main( String[] args ) throws SQLException 
     {
     	ConexaoDB.conectar();
+    	CriarTabela.criar();
     }
 }
