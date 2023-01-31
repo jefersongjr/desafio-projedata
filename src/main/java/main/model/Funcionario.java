@@ -13,7 +13,7 @@ public class Funcionario extends Pessoa {
 		this.salario = salario;
 		this.funcao = funcao;
 	}
-
+ 
 	public double getSalario() {
 		return salario;
 	}
