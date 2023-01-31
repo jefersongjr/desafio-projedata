@@ -17,7 +17,6 @@ public class Pessoa {
 
 	public Pessoa(String nome, LocalDate dataDeNascimento2) {
 		super();
-		this.id = id;
 		this.nome = nome;
 		this.dataDeNascimento = dataDeNascimento2;
 	}
