@@ -5,6 +5,7 @@ import java.sql.SQLException;
 import main.conexao.ConexaoDB;
 import main.funcionalidades.AtualizarSalario;
 import main.funcionalidades.CriarTabela;
+import main.funcionalidades.ImprimirSalarioMinimo;
 import main.funcionalidades.InserirFuncionarios;
 import main.funcionalidades.ListandoPorFuncao;
 import main.funcionalidades.ListarEmOrdemAlfabetica;
@@ -26,7 +27,8 @@ public class App {
 //		ListandoPorFuncao.listarMap();
 //		ListarPorMesNascimento.imprimirPeloMes();
 		ListarMaisVelho.imprimirMaisVelho();
-    ListarEmOrdemAlfabetica.listarOrdenado();
+        ListarEmOrdemAlfabetica.listarOrdenado();
 		ListarSomaSalario.imprimirSoma();
+		ImprimirSalarioMinimo.listarSalarios();
 	}
 }
