@@ -18,9 +18,9 @@ import main.funcionalidades.RemovendoFuncionario;
 
 public class App {
 	public static void main(String[] args) throws SQLException {
-//		ConexaoDB.conectar();
-//		CriarTabela.criar();
-//		InserirFuncionarios.inserir();
+		ConexaoDB.conectar();
+		CriarTabela.criar();
+		InserirFuncionarios.inserir();
 		RemovendoFuncionario.remover();
 		ListarFuncionarios.imprimir();
 		ListandoPorFuncao.listarMap();
