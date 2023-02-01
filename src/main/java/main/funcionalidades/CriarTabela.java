@@ -11,7 +11,7 @@ public class CriarTabela {
 			Connection connection = ConexaoDB.conectar();
 			Statement stmt = connection.createStatement();
 			String query = " create table funcionarios( nome VARCHAR(40) NOT NULL," + " dataNascimento DATE NOT NULL,"
-					+ " salario DECIMAL NOT NULL ," + " funcao VARCHAR(20) NOT NULL" + ")";
+					+ " salario NUMERIC(10,5)NOT NULL ," + " funcao VARCHAR(20) NOT NULL" + ")";
 			stmt.execute(query);
 			System.out.println("Tabela criada com sucesso!");
 			System.out.println(" ");

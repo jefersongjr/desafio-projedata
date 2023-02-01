@@ -39,6 +39,7 @@ public class ListandoPorFuncao {
 			for (String key : mapPorFuncao.keySet()) {
 
 				List<Funcionario> value = mapPorFuncao.get(key);
+				System.out.println(" ");
 				System.out.println("                        "+key + ":");
 				System.out.println(" ");
 				ListarFuncionarios.imprimirFuncionarios(value);
