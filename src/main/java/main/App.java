@@ -7,6 +7,7 @@ import main.funcionalidades.AtualizarSalario;
 import main.funcionalidades.CriarTabela;
 import main.funcionalidades.InserirFuncionarios;
 import main.funcionalidades.ListandoPorFuncao;
+import main.funcionalidades.ListarEmOrdemAlfabetica;
 import main.funcionalidades.ListarFuncionarios;
 import main.funcionalidades.ListarMaisVelho;
 import main.funcionalidades.ListarPorMesNascimento;
@@ -24,5 +25,6 @@ public class App {
 //		ListandoPorFuncao.listarMap();
 //		ListarPorMesNascimento.imprimirPeloMes();
 		ListarMaisVelho.imprimirMaisVelho();
+		ListarEmOrdemAlfabetica.listarOrdenado();
 	}
 }
