@@ -18,14 +18,14 @@ import main.funcionalidades.RemovendoFuncionario;
 
 public class App {
 	public static void main(String[] args) throws SQLException {
-//		ConexaoDB.conectar();
-//		CriarTabela.criar();
-//		InserirFuncionarios.inserir();
-//		RemovendoFuncionario.remover();
-//		ListarFuncionarios.imprimir();
-//		AtualizarSalario.aumentoSalario();
-//		ListandoPorFuncao.listarMap();
-//		ListarPorMesNascimento.imprimirPeloMes();
+		ConexaoDB.conectar();
+		CriarTabela.criar();
+		InserirFuncionarios.inserir();
+		RemovendoFuncionario.remover();
+		ListarFuncionarios.imprimir();
+		ListandoPorFuncao.listarMap();
+		AtualizarSalario.aumentoSalario();
+		ListarPorMesNascimento.imprimirPeloMes();
 		ListarMaisVelho.imprimirMaisVelho();
         ListarEmOrdemAlfabetica.listarOrdenado();
 		ListarSomaSalario.imprimirSoma();

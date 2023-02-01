@@ -42,16 +42,22 @@ public class ListarFuncionarios {
 			LocalDate newData = LocalDate.of(ano, mes, dia);
 			double salario = resultado.getDouble("salario");
 			String funcao = resultado.getString("funcao");
-			funcionarios.add(new Funcionario( nome, newData, salario, funcao));
+			funcionarios.add(new Funcionario(nome, newData, salario, funcao));
 		}
 
 		return funcionarios;
 	}
 
 	public static void imprimirFuncionarios(List<Funcionario> funcionarios) throws SQLException {
+		System.out.println("__________________________________________________________________");
+		System.out.println("| Nome      | Data De Nascimento | Salário       |   Função       |");
+		System.out.println("__________________________________________________________________");
+
 		for (Funcionario f : funcionarios) {
-			System.out.println("Nome: " + f.getNome() + " - Data de Nascimento: " + f.getDataDeNascimento()
-					+ " - Salário: " + f.getSalario() + " - Função: " + f.getFuncao());
+			System.out.println("|"+f.getNome() + "          " + f.getDataDeNascimento() + "             " + f.getSalario()
+					+ "        " + f.getFuncao()+"|");
+			System.out.println("|___________|____________________|_______________|________________|");
+
 		}
 	}
 }

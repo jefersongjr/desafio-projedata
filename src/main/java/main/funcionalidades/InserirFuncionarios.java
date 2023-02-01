@@ -26,6 +26,8 @@ public class InserirFuncionarios {
 
 			pstm.execute();
 		}
+		pstm.close();
+		connection.close();
 	}
 
 	public static List<Funcionario> listaDeFuncionario() {

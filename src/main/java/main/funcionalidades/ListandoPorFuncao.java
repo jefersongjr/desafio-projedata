@@ -17,9 +17,9 @@ public class ListandoPorFuncao {
 
 		Connection connection = ConexaoDB.conectar();
 		String query = "select * from funcionarios where funcao = ?";
+		PreparedStatement psmt = connection.prepareStatement(query);
 
 		for (Tipos tipo : Tipos.values()) {
-			PreparedStatement psmt = connection.prepareStatement(query);
 			psmt.setString(1, tipo.toString());
 			ResultSet resultado = psmt.executeQuery();
 
@@ -38,5 +38,7 @@ public class ListandoPorFuncao {
 				ListarFuncionarios.imprimirFuncionarios(value);
 			}
 		}
+		psmt.close();
+		connection.close();
 	}
 }
