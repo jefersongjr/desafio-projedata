@@ -61,8 +61,9 @@ public class ListarFuncionarios {
 		System.out.println("__________________________________________________________________");
 
 		for (Funcionario f : funcionarios) {
+			String data = formataData(f.getDataDeNascimento());
 			String salario = formataSalario(f.getSalario());
-			System.out.println("|"+f.getNome() + "          " + f.getDataDeNascimento() + "         " + salario
+			System.out.println("|"+f.getNome() + "          " + data + "           " + salario
 					+ "     " + f.getFuncao()+"");
 			System.out.println("|___________|____________________|_______________|________________|");
 
@@ -76,5 +77,11 @@ public class ListarFuncionarios {
 		return valor;
 		}
 	
-	
+	public static String formataData(LocalDate data) throws SQLException {
+			int ano = data.getYear();
+			int mes = data.getMonthValue();
+			int dia = data.getDayOfMonth();
+			String dataCompleta = ""+dia+"/"+mes+"/"+ano+"";
+			return dataCompleta;
+			} 
 }
