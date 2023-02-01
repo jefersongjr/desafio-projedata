@@ -39,8 +39,11 @@ Consistia em criar e popular uma tabela, assim como implementar outras funcional
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 
 [Git](https://git-scm.com) , [Java-JDK](https://www.oracle.com/java/technologies/downloads/) ,
-[Oracle DB](https://www.oracle.com/database/) ou o [Docker](https://docs.docker.com/get-docker/) para gerar um container do DB.
+[Oracle DB](https://www.oracle.com/database/) ou o [Docker](https://docs.docker.com/get-docker/) para gerar um container do DB. <br>
 Além disto é bom ter um editor para trabalhar com uma IDE de código como o ![Eclipse](https://www.eclipse.org/downloads/).
+
+
+<h4> 📔 Instruções </h4>
 
 ```
 
@@ -81,4 +84,15 @@ $ connect SYSTEM
 
 # Aparecerá a mensagem "Enter the password"
 # A senha para o Login está salva no arquivo DockerFile
+
+# Quando estiver conectado com o Oracle DB, execute o programa.
+
 ```
+
+<h2 id=""> 💻 Funcionalidades da Aplicação </h2>
+
+<h3> Criar Tabela </h3>
+
+Ao Executar a Aplicação, ela ira conectar-se ao DB e
+logo em seguida, irá criar a entidade <b> Funcionários </b>
+
