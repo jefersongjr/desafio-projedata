@@ -10,6 +10,7 @@ import main.funcionalidades.ListandoPorFuncao;
 import main.funcionalidades.ListarFuncionarios;
 import main.funcionalidades.ListarMaisVelho;
 import main.funcionalidades.ListarPorMesNascimento;
+import main.funcionalidades.ListarSomaSalario;
 import main.funcionalidades.RemovendoFuncionario;
 
 
@@ -24,5 +25,6 @@ public class App {
 //		ListandoPorFuncao.listarMap();
 //		ListarPorMesNascimento.imprimirPeloMes();
 		ListarMaisVelho.imprimirMaisVelho();
+		ListarSomaSalario.imprimirSoma();
 	}
 }
