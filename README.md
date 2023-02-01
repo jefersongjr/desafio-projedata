@@ -1,7 +1,14 @@
-# Desafio ProjeData - Tabela de Funcionários :office: 
+<h1 align="center">Desafio ProjeData - Tabela de Funcionários :office: </h1>
 
-![Prévia](https://github.com/jefersongjr/api-java-tt/blob/main/api-java-tt/src/images/1%200-Hyu03i97pVH5TCwlscAg.png)
+
+<div align="center">
+
+![Prévia](https://github.com/jefersongjr/desafio-projedata/blob/main/images/java_capa.jpg)
+
+</div>
+
 <h4 align="center"> 
+	
 	🚧  API Java 🚀 Em construção...  🚧
 </h4>
 
@@ -28,7 +35,50 @@ Consistia em criar e popular uma tabela, assim como implementar outras funcional
 <h2 id="requisitos"> 📖 Como Executar: </h2>
 
 <h4> ✔️ Requisítos Mínimos </h4>
+
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Java-JDK](https://www.oracle.com/java/technologies/downloads/),
+
+[Git](https://git-scm.com) , [Java-JDK](https://www.oracle.com/java/technologies/downloads/) ,
 [Oracle DB](https://www.oracle.com/database/) ou o [Docker](https://docs.docker.com/get-docker/) para gerar um container do DB.
-Além disto é bom ter um editor para trabalhar com uma IDE de código como o [Eclipse](https://www.eclipse.org/downloads/).
+Além disto é bom ter um editor para trabalhar com uma IDE de código como o ![Eclipse](https://www.eclipse.org/downloads/).
+
+```
+
+# Clone este repositório
+$ git clone git@github.com:jefersongjr/desafio-projedata.git
+
+# Acesse a pasta do projeto
+$ navegue até a pasta do projeto
+
+# O próximos passo deve ser executado no diretório que tem o arquivo pom.xml
+
+# Instale as dependências
+$ mvn install
+
+# Para o APP funcionar corretamente, deve-se ter instalado a versão do Oracle DataBase.
+
+# Usando o DB com docker no Bash
+$ navegue até o diretório que contém o arquivo DockerFile.
+
+# Usando o DB com docker no Bash
+
+# Digite no terminal:
+$ docker compose up
+
+# Esse comando criará um container com o DataBase.
+# Execute os dois comandos :
+
+$ docker start oracle-db
+
+$ docker exec -it oracle-db bash -c "source /home/oracle/.bashrc; sqlplus /nolog" 
+
+# O primeiro comando irá iniciar o container, se o mesmo estiver pausado.
+# O Segundo ira abrir um terminal interativo do SQL.
+
+# Conecte-se ao banco de dados:
+
+$ connect SYSTEM
+
+# Aparecerá a mensagem "Enter the password"
+# A senha para o Login está salva no arquivo DockerFile
+```
