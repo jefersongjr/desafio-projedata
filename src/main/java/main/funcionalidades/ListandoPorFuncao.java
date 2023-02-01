@@ -19,6 +19,9 @@ public class ListandoPorFuncao {
 		String query = "select * from funcionarios where funcao = ?";
 		PreparedStatement psmt = connection.prepareStatement(query);
 
+		System.out.println(" ");
+		System.out.println("Imprimindo Funcionários agrupados por função: ");
+		
 		for (Tipos tipo : Tipos.values()) {
 			psmt.setString(1, tipo.toString());
 			ResultSet resultado = psmt.executeQuery();
@@ -31,9 +34,7 @@ public class ListandoPorFuncao {
 
 			}
 		
-			System.out.println(" ");
-			System.out.println("Imprimindo Funcionários agrupados por função: ");
-
+			
 
 			for (String key : mapPorFuncao.keySet()) {
 

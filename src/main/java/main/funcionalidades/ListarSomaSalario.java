@@ -15,8 +15,9 @@ public class ListarSomaSalario {
 
 		while(resultado.next()) {
 			double soma = resultado.getDouble("SUM(salario)");
+			String somaFormatada = ListarFuncionarios.formataSalario(soma);
 			System.out.println(" ");
-			System.out.println("A Soma do salário de todos os funcionários é: " + soma);
+			System.out.println("A Soma do salário de todos os funcionários é: " + somaFormatada);
 		}
 		
 	}
