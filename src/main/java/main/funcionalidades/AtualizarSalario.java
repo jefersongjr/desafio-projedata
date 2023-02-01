@@ -13,7 +13,9 @@ public class AtualizarSalario {
 		String query = "UPDATE funcionarios SET salario = salario * 1.10 ";
 		Statement stmt = connection.createStatement();
 		stmt.execute(query);
-		System.out.println("Salario aumentado!");
+		
+		System.out.println(" ");
+		System.out.println("Todos os salários foram atualizados: ");
 		
 		ListarFuncionarios.imprimir();
 

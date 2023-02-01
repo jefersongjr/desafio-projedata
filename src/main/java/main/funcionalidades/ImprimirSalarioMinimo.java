@@ -21,6 +21,9 @@ public class ImprimirSalarioMinimo {
 		
 		List<Funcionario> funcionarios = ListarFuncionarios.listarFuncionarios(resultado);
 		
+		System.out.println(" ");
+		System.out.println("Listando Nome e quantidade de Salários mínimos recebidos: ");
+		System.out.println(" ");
 		System.out.println("______________________________");
 		System.out.println("| Nome      | Salários Mínimos|");
 		System.out.println("|___________|_________________|");

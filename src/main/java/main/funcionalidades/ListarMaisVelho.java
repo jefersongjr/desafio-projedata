@@ -23,6 +23,7 @@ public class ListarMaisVelho {
 		ResultSet resultado = stmt.executeQuery(query);
 
 		List<Funcionario> funcionarios = ListarFuncionarios.listarFuncionarios(resultado);
+		System.out.println(" ");
 		System.out.println(" Listando o Nome e a Idade do Funcionário mais Velho.");
 		for (Funcionario f : funcionarios) {
 			int idade = LocalDate.now().getYear() - f.getDataDeNascimento().getYear();

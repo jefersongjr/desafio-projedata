@@ -18,6 +18,9 @@ public class ListarEmOrdemAlfabetica {
 		ResultSet resultado = stmt.executeQuery(query);
 
 		List<Funcionario> funcionarios = ListarFuncionarios.listarFuncionarios(resultado);
+		
+		System.out.println(" ");
+		System.out.println("Todos os salários foram atualizadosListar Funcionários em ordem alfabética: ");
 
 		ListarFuncionarios.imprimirFuncionarios(funcionarios);
 	}

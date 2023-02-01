@@ -30,11 +30,16 @@ public class ListandoPorFuncao {
 				mapPorFuncao.put(f.getFuncao(), funcionarios);
 
 			}
+		
+			System.out.println(" ");
+			System.out.println("Imprimindo Funcionários agrupados por função: ");
+
 
 			for (String key : mapPorFuncao.keySet()) {
 
 				List<Funcionario> value = mapPorFuncao.get(key);
-				System.out.println(key + ":");
+				System.out.println("                        "+key + ":");
+				System.out.println(" ");
 				ListarFuncionarios.imprimirFuncionarios(value);
 			}
 		}

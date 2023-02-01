@@ -16,8 +16,9 @@ public class RemovendoFuncionario {
 		int contador = pstm.executeUpdate();
 
 		if (contador > 0) {
-			System.out.println("Pessoa(s) Excluída(s) com sucesso!");
+			System.out.println("Funcionário(s) Excluído(s) com sucesso!");
 			System.out.println("Linhas afetadas: " + contador);
+			System.out.println("");
 		}
 
 		connection.close();

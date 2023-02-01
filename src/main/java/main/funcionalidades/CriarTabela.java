@@ -14,6 +14,7 @@ public class CriarTabela {
 					+ " salario DECIMAL NOT NULL ," + " funcao VARCHAR(20) NOT NULL" + ")";
 			stmt.execute(query);
 			System.out.println("Tabela criada com sucesso!");
+			System.out.println(" ");
 		} catch (Exception e) {
 			throw new SQLException(e);
 		}

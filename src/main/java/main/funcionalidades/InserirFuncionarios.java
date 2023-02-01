@@ -26,6 +26,9 @@ public class InserirFuncionarios {
 
 			pstm.execute();
 		}
+		
+		System.out.println("Todos Funcionários foram cadastrados com sucesso");
+		System.out.println(" ");
 		pstm.close();
 		connection.close();
 	}

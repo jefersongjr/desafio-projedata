@@ -18,6 +18,9 @@ public class ListarPorMesNascimento {
 		ResultSet resultado = stmt.executeQuery(query);
 
 		List<Funcionario> funcionarios = ListarFuncionarios.listarFuncionarios(resultado);
+		
+		System.out.println(" ");
+		System.out.println(" Listando todos os Funcionários que fazem aniversário no més 10 ou 12 : ");
 
 		ListarFuncionarios.imprimirFuncionarios(funcionarios);
 	}
