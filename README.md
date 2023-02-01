@@ -16,7 +16,7 @@
  <a href="#sobre">Sobre</a> • 
  <a href="#ferramentas">Tecnologias</a> • 
  <a href="#requisitos">Como executar: </a> • 
- <a href="#instrucoes">Funcionalidades</a> • 
+ <a href="#funcionalidades">Funcionalidades</a> 
 </p>
 
 <h2 id="sobre"> 🚀📋 Sobre: </h2>
@@ -89,10 +89,126 @@ $ connect SYSTEM
 
 ```
 
-<h2 id=""> 💻 Funcionalidades da Aplicação </h2>
+<h2 id="funcionalidades"> 💻 Funcionalidades da Aplicação </h2>
 
 <h3> Criar Tabela </h3>
 
 Ao Executar a Aplicação, ela ira conectar-se ao DB e
 logo em seguida, irá criar a entidade <b> Funcionários </b>
 
+
+<h5> No console: </h5>
+
+ ![Console](https://github.com/jefersongjr/desafio-projedata/blob/main/images/tabelaCriadaConsole.jpg)
+ 
+ 
+<h5> No DB: </h5>
+
+ ![DB]( https://github.com/jefersongjr/desafio-projedata/blob/main/images/dbCriar.jpg)
+ 
+ <h3> Popular Tabela </h3>
+
+Em Seguida irá adicionar os Funcionários:
+
+<h5> No console: </h5>
+
+ ![Console](https://github.com/jefersongjr/desafio-projedata/blob/main/images/inserirConsole.jpg)
+ 
+ 
+<h5> No DB: </h5>
+
+ ![DB](https://github.com/jefersongjr/desafio-projedata/blob/main/images/inserirDb.jpg)
+
+
+<h3> Remover Funcionário </h3>
+
+O Próximo passo será Remover o Funcionário João da Tabela.
+
+
+<h5> No console: </h5>
+
+ ![Console](https://github.com/jefersongjr/desafio-projedata/blob/main/images/excluirConsole.jpg)
+ 
+ 
+<h5> No DB: </h5>
+
+ ![DB](https://github.com/jefersongjr/desafio-projedata/blob/main/images/removerDb.jpg)
+ 
+ 
+ <h3> Remover Funcionário </h3>
+
+O Próximo passo será Remover o Funcionário João da Tabela.
+
+
+<h5> No console: </h5>
+
+ ![Console](https://github.com/jefersongjr/desafio-projedata/blob/main/images/excluirConsole.jpg)
+ 
+  
+ <h3> Listar Todos </h3>
+
+A próximo funcionalidade será listar todos os funcionários no console
+
+<h5> No console: </h5>
+
+ ![Console](https://github.com/jefersongjr/desafio-projedata/blob/main/images/imprimindoTodosConsole.jpg)
+ 
+ 
+ <i> Os próximos passos, serão impressões da tabelas com informações diferentes: </i>
+ 
+ <h3> Agrupando por função </h3>
+
+Imprimindo todos os funcionários agrupador por função.
+
+<h5> No console: </h5>
+
+ ![Console](https://github.com/jefersongjr/desafio-projedata/blob/main/images/imprimindoFUncao1.jpg)
+ 
+ ![Console](https://github.com/jefersongjr/desafio-projedata/blob/main/images/imprimindoFUncao2.jpg)
+  
+ ![Console](https://github.com/jefersongjr/desafio-projedata/blob/main/images/imprimindoFUncao3.jpg)
+ 
+  
+ <h3> Imprimindo pelo Mês de Aniversário </h3>
+
+Imprimindo todos os funcionários que fazem aniversário no mês 10 e 12.
+
+<h5> No console: </h5>
+
+ ![Console](https://github.com/jefersongjr/desafio-projedata/blob/main/images/listandoMesConsole.jpg)
+
+
+ <h3> Maior Idade </h3>
+
+Imprimindo nome e idade do funcionários com a maior idade :
+
+<h5> No console: </h5>
+
+ ![Console](https://github.com/jefersongjr/desafio-projedata/blob/main/images/maisVelho.jpg)
+
+
+
+ <h3> Ordem Alfabética </h3>
+
+Imprimindo todos funcionários em ordem alfabética
+
+<h5> No console: </h5>
+
+ ![Console](https://github.com/jefersongjr/desafio-projedata/blob/main/images/ordemAlfabética.jpg)
+
+
+ <h3> Soma dos Salários </h3>
+
+Imprimindo a Soma de todos os salários:
+
+<h5> No console: </h5>
+
+ ![Console](https://github.com/jefersongjr/desafio-projedata/blob/main/images/somaSalario.jpg)
+ 
+  <h3> Quantos Salários Mínimos </h3>
+
+Imprimindo a quantidade de salários mínimos equivalentes, ao salário de cada funcionário
+
+<h5> No console: </h5>
+
+ ![Console](https://github.com/jefersongjr/desafio-projedata/blob/main/images/salarioMin.jpg)
