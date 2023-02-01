@@ -1,14 +1,18 @@
 package main.funcionalidades;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.text.NumberFormat;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+import java.util.Locale;
 
 import main.conexao.ConexaoDB;
 import main.model.Funcionario;
@@ -22,6 +26,9 @@ public class ListarFuncionarios {
 		ResultSet resultado = stmt.executeQuery(query);
 
 		List<Funcionario> listFuncionario = listarFuncionarios(resultado);
+		System.out.println("Imprimindo Funcionários Cadastrados");	
+		System.out.println(" ");
+
 		imprimirFuncionarios(listFuncionario);
 		stmt.close();
 		connection.close();
@@ -54,10 +61,20 @@ public class ListarFuncionarios {
 		System.out.println("__________________________________________________________________");
 
 		for (Funcionario f : funcionarios) {
-			System.out.println("|"+f.getNome() + "          " + f.getDataDeNascimento() + "             " + f.getSalario()
-					+ "        " + f.getFuncao()+"|");
+			String salario = formataSalario(f.getSalario());
+			System.out.println("|"+f.getNome() + "          " + f.getDataDeNascimento() + "         " + salario
+					+ "     " + f.getFuncao()+"");
 			System.out.println("|___________|____________________|_______________|________________|");
 
 		}
 	}
+	
+	public static String formataSalario(double salario) throws SQLException {
+		BigDecimal salarioFormatado = new BigDecimal(salario).setScale(2, RoundingMode.HALF_EVEN);
+		Locale ptBr = new Locale("pt","BR");
+		String valor = NumberFormat.getCurrencyInstance(ptBr).format(salarioFormatado);
+		return valor;
+		}
+	
+	
 }
