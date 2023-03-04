@@ -209,6 +209,7 @@ Imprimindo a Soma de todos os salários:
 
 Imprimindo a quantidade de salários mínimos equivalentes, ao salário de cada funcionário
 
-<h5> No console: </h5>
+<h5> No console:   </h5>
 
  ![Console](https://github.com/jefersongjr/desafio-projedata/blob/main/images/salarioMin.jpg)
+ 
