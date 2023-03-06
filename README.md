@@ -21,7 +21,7 @@
 
 <h2 id="sobre"> 🚀📋 Sobre: </h2>
 
-Esse Projeto foi desenvolvido por mim , [Jeferson Gomes](https://www.linkedin.com/in/jefersongjr/)
+Esse Projeto foi desenvolvido por mim , [Jeferson Gomes](https://www.linkedin.com/in/jefersongjr/)  
 na etapa técnica do processo seletivo da empresa [ProjeData](https://www.linkedin.com/company/projedata/) . <br>
 Consistia em criar e popular uma tabela, assim como implementar outras funcionalidades.<br>
 
